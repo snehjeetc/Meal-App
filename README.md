@@ -46,6 +46,12 @@ Displays all the meals in the favorite list.
 
 > Note:  If the external API takes time, a progress bar is displayed. Adding/removing a meal to/from the favorite items will notify the user about the action at the top of the page, which will fade after a second.
 
+## Screenshots
+![Main page](https://github.com/snehjeetc/Meal-App/blob/master/screenshots/main-page.png)
+![Meal Page](https://github.com/snehjeetc/Meal-App/blob/master/screenshots/meal-details-page.png)
+![Fav Meals Page](https://github.com/snehjeetc/Meal-App/blob/master/screenshots/fav-meal-page.png)
+![Autosuggestion](https://github.com/snehjeetc/Meal-App/blob/master/screenshots/auto-suggestion.png)
+
 Technology Stack : 
 Frontend : HTML, CSS for building the user interface and JS for additional functionality.
 
