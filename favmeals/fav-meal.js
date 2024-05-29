@@ -63,7 +63,7 @@ const REMOVE_ICON = `<i class="fa-solid fa-circle-minus"></i>`;
 })(); 
 
 //modal loader 
-modalLoader("input-bar-holder", commons.handlerForClosingModal); 
+modalLoader("inputBarDiv", commons.handlerForClosingModal); 
 
 //function to initialize the page
 (function () { 

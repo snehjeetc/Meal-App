@@ -16,7 +16,7 @@ let autoInputInitializer = commons.defaultAutoSuggestionMLoader('./meal/meal.htm
 autoInputInitializer(); 
 
 //modal element loader from the common js files
-modalLoader("input-bar-holder", commons.handlerForClosingModal); 
+modalLoader("inputBarDiv", commons.handlerForClosingModal); 
 
 //function to initialize main-page
 (function () {

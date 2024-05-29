@@ -17,7 +17,7 @@ let fetchAutoSugestInput = commons.defaultAutoSuggestionMLoader('./meal.html');
 fetchAutoSugestInput();  
 
 //modal element loader from the common js files
-modalLoader("input-bar-holder", commons.handlerForClosingModal); 
+modalLoader("inputBarDiv", commons.handlerForClosingModal); 
 
 //function to initialize the meal.html page 
 //will search for the query parameters and then 
