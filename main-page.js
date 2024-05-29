@@ -7,7 +7,7 @@ import carouselConfiguration from "./common/js/carousal.js";
 import modalLoader from "./common/js/modal-loader.js";
 
 
-const FETCH_ALL_CATEGORY_URL = `http://www.themealdb.com/api/json/v1/1/categories.php`; 
+const FETCH_ALL_CATEGORY_URL = `https://www.themealdb.com/api/json/v1/1/categories.php`; 
 const FETCH_MEAL_BY_CATEGORY_URL = `https://www.themealdb.com/api/json/v1/1/filter.php?c=`; 
 
 //default auto suggestion configuration, which gives a link to call an external api 
