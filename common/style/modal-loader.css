@@ -1,0 +1,85 @@
+
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 1;
+    border: 5px solid maroon;
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--modal-clr);
+}
+
+#modal-input-bar {
+    margin: 5px auto;
+    width: 80%;
+    padding: 5px;
+}
+
+#meal-suggestions {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#meal-suggestions>div {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 2px solid black;
+    background-color: var(--meal-suggestion);
+}
+
+.meal-name {
+    width: 80%;
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+
+.like-icon {
+    /* width: 20%; */
+    margin-left: auto;
+}
+
+.loading {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 10px;
+    align-items: center;
+    top: 40%;
+    left: 40%;
+    width: 250px;
+    height: 100px;
+    z-index: 2; 
+    background-color: var(--nav-color1);
+}
+
+.loading > span{ 
+    font-weight: 700;
+    word-wrap: break-word;
+    overflow: hidden;
+    color: var(--border-color1); 
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.grey {
+    background-color: rgba(245, 245, 245, 0.611);
+}
+
+.black {
+    background-color: black;
+}

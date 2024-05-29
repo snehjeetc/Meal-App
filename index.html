@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search Meal To Serve">
+    <script src="https://kit.fontawesome.com/0ada49df5d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./common/style/common.css">
+    <link rel="stylesheet" href="./home/style/home-page.css">
+    <link rel="stylesheet" href="./common/style/carousal.css">
+    <link rel="stylesheet" href="./common/style/modal-loader.css">
+    <link rel="stylesheet" href="./common/style/prop.css">
+    <title>Meal App</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div id="app-icon-container">
+                <span id="app-icon"><i class="fa-solid fa-utensils"></i></span>
+                <span id="app-name">Find Meal</span>
+            </div>
+            <div id="input-bar-holder">
+                <div id="inputBarDiv" class="input-bar-div">
+                    <input type="text" id="inputBarNav" placeholder="Search...">
+                    <i id="inputSearchIcon" class="fa-solid fa-magnifying-glass" aria-hidden="true"
+                        style="display: inline-block;"></i>
+                </div>
+            </div>
+
+            <div id="fav-meals" class="center">
+                <span id="heart-icon-nav"><i class="fa-solid fa-heart"></i></span>
+                <span>Fav Meals</span>
+            </div>
+
+        </nav>
+
+        <div class="content-cont">
+            <div id="left-btn" class="center">
+                <!-- <i class="fa-solid fa-angle-left"></i> -->
+                <button id="prev-btn" class="prev-btn">
+                    <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+                        <path
+                            d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="content">
+            </div>
+            <div id="right-btn" class="center">
+                <!-- <i class="fa-solid fa-angle-right"></i> -->
+                <button id="next-btn" class="next-btn">
+                    <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+                        <path
+                            d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="fltr-btn-div" class="show-filter-btn hidden" >
+            <button id="fltr-btn">Show All Categories</button>
+        </div>
+
+    </main>
+
+    <div id="modal-sec" class="modal hidden">
+        <div id="modal-input-bar" class="input-bar-div">
+            <form action="" autocomplete="off">
+                <input type="text" id="inputBarModal" placeholder="Search...">
+                <i id="inputSearchIcon" class="fa-solid fa-magnifying-glass" aria-hidden="true"
+                    style="display: inline-block;"></i>
+            </form>
+        </div>
+        <!-- <div class="horizontal-line"></div> -->
+        <div id="meal-suggestions">
+
+        </div>
+    </div>
+
+    <div id="loading-bar" class="loading hidden">
+    </div>
+
+    <div id="notify-div-id"  class="notify-div hidden">
+    </div>
+
+    <script type="module" src="./main-page.js"></script>
+    <!-- <script type="module" src="./auto-complete-feature.js"></script> -->
+</body>
+
+</html>

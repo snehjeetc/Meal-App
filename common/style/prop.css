@@ -1,0 +1,23 @@
+
+.center {
+    text-align: center;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+.blur-bg {
+    backdrop-filter: blur(5px);
+    opacity: 0.2;
+}
+
+
+.hidden {
+    display: none;
+}

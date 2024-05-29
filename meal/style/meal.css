@@ -1,0 +1,186 @@
+body{
+    overflow-y: hidden; 
+    scrollbar-width: none;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.meal-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%; 
+    min-width: 350px;
+    height: 90vh; 
+    min-height: 600px;
+    /* margin: auto; */
+    background-color: var(--carousal-color);
+}
+
+#instructions{
+    width: 48%;
+    background-color: var(--carousal-color);
+    height: 600px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    display: flex;
+    flex-direction: column;
+}
+
+.instr-title{ 
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 4px solid var(--border-color2);
+}
+
+#instructions > div{
+    width: 100%;
+    border-right: 2px solid var(--border-color2);
+    border-left: 2px solid var(--border-color2); 
+    border-bottom: 2px solid var(--border-color2);
+}
+
+.step-head, .step-cnt{
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.step-head{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.step-cnt{
+    font-size: 0.9rem; 
+    font-weight: 500;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+}
+
+.border-top{
+    border-top: 2px solid var(--border-color2);
+}
+
+#meal-desc{ 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 5px auto 0px auto;
+    height: 40%;
+    min-width: 200px;
+    min-height: 250px;
+    background-color:var(--card-element-clr);
+    box-shadow: 10px 10px 8px var(--card-element-clr);
+}
+
+.meal-name{
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-word;
+    align-self: center;
+    margin-top: 5px;
+    height: 15%;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+}
+
+.meal-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* align-content: center; */
+    justify-content: center;
+}
+
+.icon{
+    display: inline-block;
+    margin: auto;
+    font-size: 2rem; 
+    font-weight: 800;
+    background-color: var(--card-element-clr);
+    color: var(--border-color1);
+}
+
+#ingredients{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+    overflow-y: scroll;
+    scrollbar-width: none;
+    width: 100%;
+    height: 58%;
+    margin-top: 20px;
+    border-top: 2px solid var(--border-color2);
+}
+
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%; 
+    height: fit-content;
+    border-right: 2px solid var(--border-color2);
+    border-left: 2px solid var(--border-color2);
+    border-bottom: 2px solid var(--border-color2);
+}
+
+.c1, .c2{ 
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.c1{ 
+    border-right: 2px solid var(--border-color2);
+}
+
+.column-header{ 
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    color: black;
+}
+
+@media screen and (max-width : 700px) {
+    body { 
+        overflow-y: auto; 
+        scrollbar-width: none;
+    }
+
+    .content{
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    
+    .meal-container{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .meal-img{
+        flex-grow: 1;
+    }
+
+    #instructions{ 
+        width: 100%;
+        height: fit-content;
+
+    }
+}

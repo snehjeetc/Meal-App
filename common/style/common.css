@@ -1,0 +1,85 @@
+:root {
+    --nav-color1: #dab794;
+    --carousal-color: #dec7a3;
+    --bg-color: #e7d8bf;
+    --modal-clr: #dec7a3;
+    --meal-suggestion: #e7d8bf;
+    --meal-sgst-active-clr: #dec7a3;
+    --card-element-clr: #bba17ae6;
+    --border-color1: maroon; 
+    --border-color2: hsl(0, 69%, 25%); 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+input {
+    background-color: var(--bg-color);
+}
+
+nav {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: var(--nav-color1);
+}
+
+
+#app-icon-container {
+    text-align: center;
+    vertical-align: middle;
+    flex-grow: 1;
+    font-size: larger;
+    min-width: 120px;
+}
+
+#app-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.active {
+    background-color: var(--modal-clr) !important;
+    font-weight: 600;
+    /* background-color: white !important; */
+}
+
+#heart-icon-nav{
+    color: maroon;
+}
+
+
+.notify-div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 10px;
+    align-items: center;
+    top: 11%;
+    left: 40%;
+    width: 250px;
+    height: 50px;
+    z-index: 3; 
+    background-color: var(--nav-color1);
+    transition: all 0.25s ease-in;
+    border: 4px solid var(--border-color2);
+    border-radius: 1rem;
+    text-align: center;
+    font-size : 0.9rem; 
+    font-weight: 600;
+    word-wrap: break-word;
+    overflow: hidden;
+    color: var(--border-color1)
+}
+
+

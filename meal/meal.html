@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search Meal To Serve">
+    <script src="https://kit.fontawesome.com/0ada49df5d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../common/style/common.css">
+    <link rel="stylesheet" href="../home/style/home-page.css">
+    <link rel="stylesheet" href="./style/meal.css">
+    <link rel="stylesheet" href="../common/style/modal-loader.css">
+    <link rel="stylesheet" href="../common/style/prop.css">
+    <title>Meal App</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div id="app-icon-container">
+                <span id="app-icon"><i class="fa-solid fa-utensils"></i></span>
+                <span id="app-name">Find Meal</span>
+            </div>
+            <div id="input-bar-holder">
+                <div id="inputBarDiv" class="input-bar-div">
+                    <input type="text" id="inputBarNav" placeholder="Search...">
+                    <i id="inputSearchIcon" class="fa-solid fa-magnifying-glass" aria-hidden="true"
+                        style="display: inline-block;"></i>
+                </div>
+            </div>
+
+            <div id="fav-meals" class="center">
+                <span id="heart-icon-nav"><i class="fa-solid fa-heart"></i></span>
+                <span>Fav Meals</span>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="meal-container">
+                <div id="meal-desc">
+                    <span class="meal-name"></span>
+                    <div class="meal-img"></div>
+                </div>
+                <div id="ingredients">
+                    <div class="row header-row">
+                        <span class="c1 column-header">Ingredients</span>
+                        <span class="c2 column-header">Measure</span>
+                    </div>
+                </div>
+            </div>
+            <div id="instructions">
+                <p class="instr-title">Instructions</p>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="modal-sec" class="modal hidden">
+        <div id="modal-input-bar" class="input-bar-div">
+            <form action="" autocomplete="off">
+                <input type="text" id="inputBarModal" placeholder="Search...">
+                <i id="inputSearchIcon" class="fa-solid fa-magnifying-glass" aria-hidden="true"
+                    style="display: inline-block;"></i>
+            </form>
+        </div>
+
+        <div id="meal-suggestions">
+
+        </div>
+    </div>
+
+    <div id="loading-bar" class="loading hidden">
+    </div>
+
+    <div id="notify-div-id"  class="notify-div hidden">
+    </div>
+
+    <script type="module" src="./meal.js"></script>
+    <!-- <script type="module" src="./auto-complete-feature.js"></script> -->
+</body>
+
+</html>
