@@ -23,6 +23,9 @@ modalLoader("input-bar-holder", commons.handlerForClosingModal);
     let contentElement = document.querySelector("div.content");
     let filterBtnDiv = document.getElementById("fltr-btn-div");
     let fltrBtn = document.getElementById("fltr-btn");
+    document.getElementById("app-icon-container").addEventListener("click", () => { 
+        location.reload(); 
+    });
     document.getElementById("fav-meals").addEventListener("click", () => { 
         window.location.href = `./favmeals/fav-meal.html`; 
     }); 
