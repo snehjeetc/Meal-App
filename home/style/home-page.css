@@ -10,6 +10,10 @@
     min-width: 100px;
 }
 
+#fav-meals:hover{
+    cursor: pointer; 
+}
+
 #input-bar-holder {
     flex-grow: 2;
 }

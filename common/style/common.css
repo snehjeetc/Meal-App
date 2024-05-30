@@ -47,6 +47,10 @@ nav {
     margin-left: 10px;
 }
 
+#app-icon-container:hover{
+    cursor: pointer;
+}
+
 .active {
     background-color: var(--modal-clr) !important;
     font-weight: 600;
